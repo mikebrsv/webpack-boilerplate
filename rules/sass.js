@@ -9,6 +9,7 @@ const sass = {
         // 'vue-style-loader',
         MiniCssExtractPlugin.loader,
         'css-loader',
+        'postcss-loader',
         // 'sass-loader',
         {
           loader: 'sass-loader',
@@ -31,6 +32,7 @@ const sass = {
         MiniCssExtractPlugin.loader,
         // Translates CSS into CommonJS
         'css-loader',
+        'postcss-loader',
         // Compiles Sass to CSS
         'sass-loader',
       ],
