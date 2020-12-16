@@ -9,6 +9,7 @@ const vue = require('./rules/vue.js');
 const pug = require('./rules/pug.js');
 const img = require('./rules/img.js');
 const sass = require('./rules/sass.js');
+const fonts = require('./rules/fonts.js');
 
 module.exports = {
   // mode: 'development',
@@ -36,6 +37,7 @@ module.exports = {
       pug,
       img,
       sass,
+      fonts,
     ],
   },
 
