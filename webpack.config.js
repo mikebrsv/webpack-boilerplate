@@ -5,11 +5,12 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const vue = require('./rules/vue.js');
-const pug = require('./rules/pug.js');
-const img = require('./rules/img.js');
-const sass = require('./rules/sass.js');
 const fonts = require('./rules/fonts.js');
+const ico = require('./rules/ico.js');
+const img = require('./rules/img.js');
+const pug = require('./rules/pug.js');
+const sass = require('./rules/sass.js');
+const vue = require('./rules/vue.js');
 
 module.exports = {
   // mode: 'development',
@@ -33,11 +34,12 @@ module.exports = {
 
   module: {
     rules: [
-      vue,
-      pug,
-      img,
-      sass,
       fonts,
+      ico,
+      img,
+      pug,
+      sass,
+      vue,
     ],
   },
 
